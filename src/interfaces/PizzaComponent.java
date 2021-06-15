@@ -10,5 +10,5 @@ package interfaces;
  * @author sandroandrade
  */
 public interface PizzaComponent {
-    public abstract void preparar();
+    public abstract String preparar();
 }

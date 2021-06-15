@@ -16,8 +16,7 @@ public class PresuntoDecorator extends PizzaDecorator {
     public PresuntoDecorator(PizzaComponent decorated) {
         this.decorated = decorated;
     }
-    public void preparar() {
-        decorated.preparar();
-        System.out.println("Colocando o presunto");
+    public String preparar() {        
+        return decorated.preparar() + "\n" + " + presunto";
     }
 }
